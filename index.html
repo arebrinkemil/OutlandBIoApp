@@ -85,7 +85,7 @@
           <button
             aria-label="slide backward"
             class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
-            id="prev"
+            id="prev1"
           >
             <svg
               class="dark:text-gray-900"
@@ -109,7 +109,7 @@
           >
             <h1 class="text-4xl font-bold leading-normal">Current</h1>
             <div
-              id="slider"
+              id="slider1"
               class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
             >
               <div
@@ -217,7 +217,7 @@
           <button
             aria-label="slide forward"
             class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
-            id="next"
+            id="next1"
           >
             <svg
               class="dark:text-gray-900"
@@ -254,39 +254,292 @@
         ></div>
       </div>
       <!-- Movie card -->
+
       <section
-        class="h-screen lg:h-[900px] w-full max-w-[1000px] flex justify-center items-end"
+        class="h-screen lg:h-[400px] w-full flex justify-center items-end"
       >
         <div class="flex flex-col lg:flex-row gap-5 w-full">
-          <img
-            class="mx-auto lg:mx-0 w-[200px]"
-            src="assets/img_placholder.png"
-            alt=""
-          />
           <div
-            class="flex flex-col lg:flex-grow justify-end gap-[30px] text-center lg:text-start"
+            class="flex flex-col lg:flex-grow justify-start gap-[30px] text-center lg:text-start"
           >
             <div>
               <h1 class="text-4xl font-bold leading-normal">Legend has it</h1>
-              <p class="text-outland-gray">1 hour 36 min</p>
-            </div>
-            <div class="flex justify-center lg:justify-between gap-4">
-              <button
-                class="cursor-pointer bg-outland-red-800 hover:bg-outland-red-500 transition-colors duration-300 ease-in border border-outland-red-500 rounded-[10px] py-1 px-[50px] text-xl font-medium leading-normal w-full sm:w-fit"
-              >
-                Tickets
-              </button>
-              <button
-                class="hidden lg:block cursor-pointer font-bold leading-normal"
-              >
-                <span class="mr-2">View images</span>
-                <i class="fa-solid fa-image"></i>
-              </button>
+              <p class="text-outland-gray">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+
+              <p class="text-outland-red-500">Read more about info</p>
             </div>
           </div>
+          <img
+            class="mx-auto lg:mx-0 w-[400px]"
+            src="assets/img_placholder-landscape.png"
+            alt=""
+          />
         </div>
       </section>
       <!-- Description -->
+      <div
+        class="flex items-end justify-center w-full h-full py-24 sm:py-8 px-4 lg:h-[800px]"
+      >
+        <div class="w-full relative flex items-center justify-center">
+          <button
+            aria-label="slide backward"
+            class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+            id="prev2"
+          >
+            <svg
+              class="dark:text-gray-900"
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 1L1 7L7 13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden"
+          >
+            <h1 class="text-4xl font-bold leading-normal">Current</h1>
+            <div
+              id="slider2"
+              class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
+            >
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+
+              <div
+                class="flex flex-shrink-0 flex-col relative w-full sm:w-auto"
+              >
+                <div class="flex flex-col relative w-full sm:w-auto">
+                  <img
+                    src="assets/img_placholder.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-[310px]"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-outland-red-500 rounded-b-lg"
+                  >
+                    <h3 class="text-xl text-white font-bold">release date x</h3>
+                  </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-normal">Legend has it</h2>
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="slide forward"
+            class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+            id="next2"
+          >
+            <svg
+              class="dark:text-gray-900"
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L7 7L1 13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <!-- Tickets -->
     </main>
@@ -320,22 +573,31 @@
     </footer>
 
     <script>
-      let defaultTransform = 0;
-      function goNext() {
-        defaultTransform = defaultTransform - 398;
-        var slider = document.getElementById("slider");
-        if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7)
-          defaultTransform = 0;
-        slider.style.transform = "translateX(" + defaultTransform + "px)";
+      function handleSlider(sliderId, nextId, prevId) {
+        let defaultTransform = 0;
+        const slider = document.getElementById(sliderId);
+        const next = document.getElementById(nextId);
+        const prev = document.getElementById(prevId);
+
+        function goNext() {
+          defaultTransform -= 398;
+          if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7)
+            defaultTransform = 0;
+          slider.style.transform = `translateX(${defaultTransform}px)`;
+        }
+
+        function goPrev() {
+          if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
+          else defaultTransform += 398;
+          slider.style.transform = `translateX(${defaultTransform}px)`;
+        }
+
+        next.addEventListener("click", goNext);
+        prev.addEventListener("click", goPrev);
       }
-      next.addEventListener("click", goNext);
-      function goPrev() {
-        var slider = document.getElementById("slider");
-        if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-        else defaultTransform = defaultTransform + 398;
-        slider.style.transform = "translateX(" + defaultTransform + "px)";
-      }
-      prev.addEventListener("click", goPrev);
+
+      handleSlider("slider1", "next1", "prev1");
+      handleSlider("slider2", "next2", "prev2");
     </script>
   </body>
 </html>
