@@ -1,5 +1,5 @@
-import anime from "animejs/lib/anime.es.js";
-import movies from "./movieArray";
+import anime from "animejs;
+
 
 const aside = document.querySelector("#aside");
 const asideInner = document.querySelector("#aside-inner");
