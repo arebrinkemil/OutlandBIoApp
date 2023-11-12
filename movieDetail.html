@@ -21,6 +21,35 @@
   </head>
   <body class="bg-black h-screen m-0 tetx-xl text-white">
     <header>
+      <aside id="aside" class="w-screen h-screen hidden top-0 left-0">
+        <div
+          id="aside-inner"
+          class="bg-outland-red-800 w-full h-full flex flex-col gap-[10px] px-6 py-8 translate-x-full transition-all duration-300 ease-in"
+        >
+          <div class="flex justify-end">
+            <i id="menu-btn" class="fa-solid fa-x text-3xl cursor-pointer"></i>
+          </div>
+          <div class="flex flex-col gap-[10px] cursor-pointer">
+            <a class="text-2xl font-bold" href="#">Films</a>
+            <div class="w-full h-[1px] bg-white"></div>
+          </div>
+          <div class="flex flex-col gap-[10px] cursor-pointer">
+            <a class="text-2xl font-bold" href="#">Events</a>
+            <div class="w-full h-[1px] bg-white"></div>
+          </div>
+          <div class="flex flex-col gap-[10px] cursor-pointer">
+            <a class="text-2xl font-bold" href="#">Submit a film</a>
+            <div class="w-full h-[1px] bg-white"></div>
+          </div>
+          <div class="flex flex-col gap-[10px] cursor-pointer">
+            <a class="text-2xl font-bold" href="#">About</a>
+            <div class="w-full h-[1px] bg-white"></div>
+          </div>
+          <div class="flex flex-col gap-[10px] cursor-pointer">
+            <a class="text-2xl font-bold" href="#">FAQ</a>
+          </div>
+        </div>
+      </aside>
       <nav class="px-6 py-5">
         <!-- Mobile -->
         <div class="lg:hidden flex justify-between items-center">
@@ -28,6 +57,7 @@
             <img class="h-[52px]" src="assets/logga-sm.svg" alt="" />
           </a>
           <div
+            id="menu-btn"
             class="bg-outland-red-800 border border-outland-red-500 rounded-md p-[5px] flex flex-col gap-[5px] cursor-pointer"
           >
             <div class="w-5 h-[3px] bg-white rounded-full"></div>
@@ -91,6 +121,50 @@
           class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black to-white/0"
         ></div>
       </div>
+      <!-- Image view -->
+      <section
+        id="img-view-section"
+        class="hidden top-0 left-0 w-full h-screen"
+      >
+        <div
+          id="carousel-btn"
+          class="w-full h-full bg-outland-black/30 opacity-0 transition duration-300 ease-in-out backdrop-blur-sm flex items-center px-6"
+        >
+          <div
+            id="img-carousel-container"
+            class="flex justify-between items-center w-full max-w-[1272px] h-full max-h-[500px] mx-auto"
+          >
+            <div
+              id="prev-slide"
+              class="bg-outland-black w-[45px] h-[45px] flex justify-center items-center rounded-full shrink-0 mr-1"
+            >
+              <i class="fa-solid fa-chevron-left text-2xl"></i>
+            </div>
+            <div
+              id="carousel-size"
+              class="flex flex-col gap-5 flex-grow h-full overflow-hidden max-w-[768px]"
+            >
+              <div class="flex justify-end">
+                <i
+                  id="carousel-btn"
+                  class="fa-solid fa-x text-3xl cursor-pointer"
+                ></i>
+              </div>
+              <div id="carousel" class="w-full flex h-full">
+                <img class="object-cover" src="assets/img-test-1.png" alt="" />
+                <img class="object-cover" src="assets/img-test-2.png" alt="" />
+                <img class="object-cover" src="assets/img-test-3.png" alt="" />
+              </div>
+            </div>
+            <div
+              id="next-slide"
+              class="bg-outland-black w-[45px] h-[45px] flex justify-center items-center rounded-full shrink-0 ml-1"
+            >
+              <i class="fa-solid fa-chevron-right text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Movie card -->
       <section
         class="h-screen lg:h-[900px] w-full max-w-[1000px] flex justify-center items-end"
@@ -110,11 +184,13 @@
             </div>
             <div class="flex justify-center lg:justify-between gap-4">
               <button
+                id="ticket-link"
                 class="cursor-pointer bg-outland-red-800 hover:bg-outland-red-500 transition-colors duration-300 ease-in border border-outland-red-500 rounded-[10px] py-1 px-[50px] text-xl font-medium leading-normal w-full sm:w-fit"
               >
                 Tickets
               </button>
               <button
+                id="carousel-btn"
                 class="hidden lg:block cursor-pointer font-bold leading-normal"
               >
                 <span class="mr-2">View images</span>
@@ -126,7 +202,10 @@
       </section>
       <!-- Description -->
       <section class="max-w-[1000px] py-16 flex flex-col gap-[40px]">
-        <button class="lg:hidden w-fit cursor-pointer font-bold leading-normal">
+        <button
+          id="carousel-btn"
+          class="lg:hidden w-fit cursor-pointer font-bold leading-normal"
+        >
           <span class="mr-2">View images</span>
           <i class="fa-solid fa-image"></i>
         </button>
@@ -152,7 +231,7 @@
         </div>
       </section>
       <!-- Tickets -->
-      <section class="max-w-[1000px] w-full">
+      <section id="tickets" class="max-w-[1000px] w-full">
         <h1 class="text-4xl font-bold mb-4">Tickets</h1>
         <div class="flex flex-col sm:flex-row gap-4">
           <div
@@ -328,5 +407,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
