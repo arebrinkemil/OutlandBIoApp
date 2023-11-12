@@ -1,5 +1,4 @@
-import anime from "animejs;
-
+import anime from "animejs";
 
 const aside = document.querySelector("#aside");
 const asideInner = document.querySelector("#aside-inner");
