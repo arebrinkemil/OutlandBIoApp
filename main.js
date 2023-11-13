@@ -21,7 +21,7 @@ menuBtns.forEach((menuBtn) => {
   menuBtn.addEventListener("click", () => {
     if (aside.classList.contains("hidden")) {
       // Open aside
-      aside.classList.replace("hidden", "absolute");
+      aside.classList.replace("hidden", "fixed");
       setTimeout(() => {
         asideInner.classList.replace("translate-x-full", "translate-x-0");
       }, 10);
@@ -29,7 +29,7 @@ menuBtns.forEach((menuBtn) => {
       // Close aside
       asideInner.classList.replace("translate-x-0", "translate-x-full");
       setTimeout(() => {
-        aside.classList.replace("absolute", "hidden");
+        aside.classList.replace("fixed", "hidden");
       }, 300);
     }
   });
