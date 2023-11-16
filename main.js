@@ -153,8 +153,11 @@ cinemaCheck.forEach((checkBox) => {
 });
 
 function handleSlider(sliderId, nextId, prevId) {
-  let defaultTransform = 0;
   const slider = document.getElementById(sliderId);
+  if (!slider) {
+    return;
+  }
+  let defaultTransform = 0;
   const next = document.getElementById(nextId);
   const prev = document.getElementById(prevId);
   const card = slider.querySelector(".flex-shrink-0");
