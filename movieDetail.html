@@ -111,6 +111,7 @@
         class="absolute top-0 left-0 overflow-hidden w-full h-screen lg:h-2/3 -z-50"
       >
         <video
+          id="trailer"
           class="w-full h-full object-cover"
           src="assets/Legend Has It Trailer 2023.mp4"
           autoplay
@@ -172,13 +173,17 @@
         <div class="flex flex-col lg:flex-row gap-5 w-full">
           <img
             class="mx-auto lg:mx-0 w-[200px]"
-            src="assets/img_placholder.png"
+            src="assets/'Legend Has It.jpg"
             alt=""
           />
           <div
             class="flex flex-col lg:flex-grow justify-end gap-[30px] text-center lg:text-start"
           >
             <div>
+              <i
+                id="audio-toggle"
+                class="fa-solid fa-volume-xmark cursor-pointer transition-colors duration-300 text-outland-gray hover:text-white text-xl"
+              ></i>
               <h1 class="text-4xl font-bold leading-normal">Legend has it</h1>
               <p class="text-outland-gray">1 hour 36 min</p>
             </div>
@@ -487,5 +492,6 @@
       </div>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/movieDetail.js"></script>
   </body>
 </html>
