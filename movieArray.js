@@ -1,4 +1,4 @@
-const movies = [
+export const movies = [
   {
     name: "Movie 1",
     time_length: 120,
@@ -48,4 +48,151 @@ const movies = [
   // Add more movie objects as needed
 ];
 
-export default movies;
+export const tickets = [
+  {
+    cinema: "AMC Theater",
+    week: {
+      monday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "16:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      tuesday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      wednesday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      thursday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      friday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      saturday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "16:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      sunday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+    },
+  },
+  {
+    cinema: "Cineworld",
+    week: {
+      monday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "16:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      tuesday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      wednesday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      thursday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      friday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      saturday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "16:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+      sunday: [
+        {
+          room: "Room 2",
+          time: "12:00",
+          language: "En",
+          text: "En",
+        },
+      ],
+    },
+  },
+];
