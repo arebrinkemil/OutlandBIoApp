@@ -6,3 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.custom-margin-top {
+  padding-top: calc(100vh - 40vh);
+}
