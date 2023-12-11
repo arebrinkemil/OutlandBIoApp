@@ -1,37 +1,112 @@
-function handleSlider(sliderId, nextId, prevId) {
-  const slider = document.getElementById(sliderId);
-  if (!slider) {
-    return;
-  }
-  let defaultTransform = 0;
-  const next = document.getElementById(nextId);
-  const prev = document.getElementById(prevId);
-  const card = slider.querySelector(".flex-shrink-0");
-  const gapSize = 32; // gap mellan korten
-  let cardWidth = card.offsetWidth + gapSize;
+var glideMulti1 = new Glide(".multi1", {
+  type: "carousel",
+  autoplay: 3500,
+  perView: 5,
+  peek: {
+    before: 0,
+    after: 100,
+  },
+  breakpoints: {
+    1700: {
+      perView: 4,
+    },
+    1400: {
+      perView: 3,
+    },
+    1070: {
+      perView: 2,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
+    767: {
+      perView: 4,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
 
-  function updateCardWidth() {
-    cardWidth = card.offsetWidth + gapSize;
-  }
+    688: {
+      perView: 3,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
 
-  window.addEventListener("resize", updateCardWidth);
+    530: {
+      perView: 2,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
+    400: {
+      perView: 2,
+      peek: {
+        before: 0,
+        after: 0,
+      },
+    },
+  },
+});
 
-  function goNext() {
-    defaultTransform -= cardWidth;
-    if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7)
-      defaultTransform = 0;
-    slider.style.transform = `translateX(${defaultTransform}px)`;
-  }
+var glideMulti2 = new Glide(".multi2", {
+  type: "carousel",
+  autoplay: 3500,
+  perView: 5,
+  peek: {
+    before: 0,
+    after: 100,
+  },
+  breakpoints: {
+    1700: {
+      perView: 4,
+    },
+    1400: {
+      perView: 3,
+    },
+    1070: {
+      perView: 2,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
+    767: {
+      perView: 4,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
 
-  function goPrev() {
-    if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-    else defaultTransform += cardWidth;
-    slider.style.transform = `translateX(${defaultTransform}px)`;
-  }
+    688: {
+      perView: 3,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
 
-  next.addEventListener("click", goNext);
-  prev.addEventListener("click", goPrev);
-}
+    530: {
+      perView: 2,
+      peek: {
+        before: 0,
+        after: 50,
+      },
+    },
+    400: {
+      perView: 2,
+      peek: {
+        before: 0,
+        after: 0,
+      },
+    },
+  },
+});
 
-handleSlider("slider1", "next1", "prev1");
-handleSlider("slider2", "next2", "prev2");
+glideMulti1.mount();
+glideMulti2.mount();
