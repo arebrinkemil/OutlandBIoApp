@@ -65,11 +65,23 @@ export const tickets = [
           language: "En",
           text: "En",
         },
+        {
+          room: "Room 3",
+          time: "20:00",
+          language: "En",
+          text: "En",
+        },
       ],
       tuesday: [
         {
           room: "Room 2",
           time: "12:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "20:00",
           language: "En",
           text: "En",
         },
@@ -108,6 +120,12 @@ export const tickets = [
         {
           room: "Room 3",
           time: "16:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "20:00",
           language: "En",
           text: "En",
         },
@@ -154,6 +172,18 @@ export const tickets = [
           language: "En",
           text: "En",
         },
+        {
+          room: "Room 3",
+          time: "20:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 5",
+          time: "20:00",
+          language: "En",
+          text: "En",
+        },
       ],
       thursday: [
         {
@@ -189,6 +219,18 @@ export const tickets = [
         {
           room: "Room 2",
           time: "12:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 3",
+          time: "20:00",
+          language: "En",
+          text: "En",
+        },
+        {
+          room: "Room 5",
+          time: "20:00",
           language: "En",
           text: "En",
         },
