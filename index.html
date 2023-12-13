@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Outland</title>
   </head>
-  <body class="bg-black h-screen m-0 tetx-xl text-white">
+  <body class="overflow-x-hidden bg-black h-screen m-0 tetx-xl text-white">
     <header>
       <aside id="aside" class="w-screen h-screen hidden top-0 left-0 z-40">
         <div
@@ -120,7 +120,7 @@
       <!-- Hero -->
 
       <div
-        class="flex items-center justify-center w-full py-24 px-1 sm:h-[600px] h-[500px]"
+        class="flex items-center justify-center w-full py-24 px-1 md:h-[600px] h-[400px]"
       >
         <div class="w-full relative flex items-center justify-center">
           <div
@@ -247,7 +247,7 @@
       </div>
 
       <div
-        class="absolute top-0 left-0 overflow-hidden w-full h-screen lg:h-2/3 -z-50"
+        class="absolute top-0 left-0 overflow-hidden w-full h-screen lg:h-screen -z-50"
       >
         <video
           class="w-full h-full object-cover"
@@ -279,7 +279,7 @@
                 here, content here', making it look like readable English.
               </p>
               <a href="/movieDetail.html">
-                <p class="text-outland-red-500">Read more about info</p>
+                <p class="text-outland-red-500">Buy tickets now for 30% off!</p>
               </a>
             </div>
           </div>
@@ -290,16 +290,15 @@
           />
         </div>
       </section>
-      <!-- Description -->
 
       <div
-        class="flex items-center justify-center w-full py-24 px-1 sm:h-[700px] h-[700px]"
+        class="flex items-center justify-center w-full py-24 px-1 md:h-[700px] h-[400px]"
       >
         <div class="w-full relative flex items-center justify-center">
           <div
             class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden"
           >
-            <h1 class="text-4xl font-bold leading-normal">Current</h1>
+            <h1 class="text-4xl font-bold leading-normal">Upcoming films</h1>
             <div class="glide multi2">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -459,69 +458,129 @@
       </div>
 
       <div class="">
-        <div class="text-center font-bold text-3xl py-6">Upcoming events</div>
-        <div class="flex flex-wrap justify-center jflex-col gap-2 md:flex-row">
-          <!-- Card 1 -->
-          <div class="flex-none w-80 mx-4 bg-white rounded shadow-lg">
+        <div class="text-center font-bold text-3xl py-6">Our events</div>
+        <div class="flex flex-wrap justify-center jflex-col gap-4 md:flex-row">
+          <div class="flex-none w-80 mx-4 bg-white rounded-2xl shadow-lg">
             <img
-              class="w-full h-48 object-cover rounded-t"
+              class="w-full h-48 object-cover rounded-t-2xl"
               src="/assets/braydon.jpg"
               alt="Trekking Tour"
             />
             <div class="p-4">
-              <p class="text-sm text-gray-600">RAFFLE | WINNING REISEN</p>
+              <p class="text-sm text-gray-600">
+                Mountain bike | Braydon Bringhurst
+              </p>
               <p class="text-lg text-black font-bold">
-                WIN A TREKKING TOUR TO LA PALMA
+                Talks about biking and his life
               </p>
               <button
                 class="mt-4 bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300"
               >
-                Participate in the raffle
+                Tickets
               </button>
             </div>
           </div>
-          <!-- Card 2 -->
-          <div class="flex-none w-80 mx-4 bg-white rounded shadow-lg">
+
+          <div class="flex-none w-80 mx-4 bg-white rounded-2xl shadow-lg">
             <img
-              class="w-full h-48 object-cover rounded-t"
+              class="w-full h-48 object-cover rounded-t-2xl"
               src="/assets/AlexHonnold.jpg"
               alt="Call for Entry"
             />
             <div class="p-4">
-              <p class="text-sm text-gray-600">UNITED BY SUMMITS</p>
-              <p class="text-lg text-black font-bold">CALL FOR ENTRY</p>
+              <p class="text-sm text-gray-600">Climbing | Alex Honnold</p>
+              <p class="text-lg text-black font-bold">How to climb</p>
               <button
                 class="mt-4 bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300"
               >
-                Apply with your own summit
+                Tickets
               </button>
             </div>
           </div>
-          <!-- Card 3 -->
-          <div class="flex-none w-80 mx-4 bg-white rounded shadow-lg">
+
+          <div class="flex-none w-80 mx-4 bg-white rounded-2xl shadow-lg">
             <img
-              class="w-full h-48 object-cover rounded-t"
+              class="w-full h-48 object-cover rounded-t-2xl"
               src="/assets/nikolai.png"
               alt="Be Part of the EOFT"
             />
             <div class="p-4">
-              <p class="text-sm text-gray-600">EOFT TRAIL TEAM</p>
-              <p class="text-lg text-black font-bold">BE PART OF THE EOFT!</p>
+              <p class="text-sm text-gray-600">Skiing | Nikolai Schrimer</p>
+              <p class="text-lg text-black font-bold">Avalanche course</p>
               <button
                 class="mt-4 bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition duration-300"
               >
-                Open trail team positions
+                Tickets
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Tickets -->
+      <section class="bg-red-600 w-screen mt-16">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-md sm:text-center">
+            <h2
+              class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white"
+            >
+              FOLLOW THE ADVENTURE.
+            </h2>
+            <p
+              class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400"
+            >
+              Subscribe now to our newsletter and receive news about the EOFT
+              and other films events from Moving Adventures Medien!
+            </p>
+            <form action="#">
+              <div
+                class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+              >
+                <div class="relative w-full">
+                  <label
+                    for="email"
+                    class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >Email address</label
+                  >
+                  <div
+                    class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      ></path>
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    class="block p-3 pl-10 w-full text-sm text-gray-900 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Enter your email"
+                    type="email"
+                    id="email"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="py-3 px-5 w-full text-sm font-medium whitespace-nowrap text-center text-white rounded-lg border bg-black cursor-pointer sm:rounded-none sm:rounded-r-lg focus:ring-4 focus:ring-primary-300"
+                  >
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer
-      class="px-6 py-[10px] lg:pb-16 lg:pt-6 mt-16 bg-white text-outland-black"
-    >
+    <footer class="px-6 py-[10px] lg:pb-16 lg:pt-6 bg-white text-outland-black">
       <div
         class="w-full max-w-[1000px] mx-auto uppercase flex flex-col gap-5 text-sm lg:text-base"
       >
