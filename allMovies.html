@@ -121,8 +121,38 @@
         ></div>
       </div>
       <!-- <div class="w-full h-screen"></div> -->
+      <div class="h-[70vh] lg:h-[60vh]"></div>
+
       <div
-        class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-4 gap-y-10 custom-margin-top"
+        id="ticket-dropdown"
+        class="text-outland-black pb-[20px] rounded-[10px] text-xl cursor-pointer h-fit w-full max-w-[1300px]"
+      >
+        <div class="w-full flex gap-8 flex-col lg:flex-row">
+          <div
+            class="flex justify-between items-center bg-white p-[10px] rounded-[10px]"
+          >
+            <div class="mr-4">
+              <i
+                class="fa-solid fa-calendar-days mr-[10px] text-outland-red-500"
+              ></i>
+              <span>Day</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div
+            class="flex justify-between items-center bg-white p-[10px] rounded-[10px]"
+          >
+            <div class="mr-4">
+              <i class="fa-solid fa-play mr-[10px] text-outland-red-500"></i>
+              <span>Cinema</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="text-center font-bold text-3xl py-1">All movies</div>
+      <div
+        class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-4 gap-y-10"
       >
         <div
           id="card1"

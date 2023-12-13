@@ -1,7 +1,8 @@
 var glideMulti1 = new Glide(".multi1", {
   type: "carousel",
-  autoplay: 3500,
+  autoplay: 2500,
   perView: 5,
+  gap: 20,
   peek: {
     before: 0,
     after: 100,
@@ -9,18 +10,35 @@ var glideMulti1 = new Glide(".multi1", {
   breakpoints: {
     1700: {
       perView: 4,
+      gap: 20,
     },
+
     1400: {
       perView: 3,
-    },
-    1070: {
-      perView: 2,
+      gap: 20,
       peek: {
         before: 0,
         after: 50,
       },
     },
-    767: {
+
+    1150: {
+      perView: 3,
+      gap: 20,
+      peek: {
+        before: 0,
+        after: 0,
+      },
+    },
+    990: {
+      perView: 2,
+      gap: 20,
+      peek: {
+        before: 0,
+        after: 100,
+      },
+    },
+    768: {
       perView: 4,
       peek: {
         before: 0,
@@ -55,8 +73,9 @@ var glideMulti1 = new Glide(".multi1", {
 
 var glideMulti2 = new Glide(".multi2", {
   type: "carousel",
-  autoplay: 3500,
+  autoplay: 2500,
   perView: 5,
+  gap: 20,
   peek: {
     before: 0,
     after: 100,
@@ -64,18 +83,35 @@ var glideMulti2 = new Glide(".multi2", {
   breakpoints: {
     1700: {
       perView: 4,
+      gap: 20,
     },
+
     1400: {
       perView: 3,
-    },
-    1070: {
-      perView: 2,
+      gap: 20,
       peek: {
         before: 0,
         after: 50,
       },
     },
-    767: {
+
+    1150: {
+      perView: 3,
+      gap: 20,
+      peek: {
+        before: 0,
+        after: 0,
+      },
+    },
+    990: {
+      perView: 2,
+      gap: 20,
+      peek: {
+        before: 0,
+        after: 100,
+      },
+    },
+    787: {
       perView: 4,
       peek: {
         before: 0,
